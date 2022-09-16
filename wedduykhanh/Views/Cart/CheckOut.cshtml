@@ -1,0 +1,58 @@
+﻿@model wedduykhanh.Models.HOADON
+
+@{
+    ViewBag.Title = "CheckOut";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+
+<div>
+    <h4>Thông tin Hóa Đơn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Ngày Tạo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngaytao)
+        </dd>
+
+        <dt>
+            Tên Khách hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenKH)
+        </dd>
+
+        <dt>
+            Tổng tiền 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tongtien)
+        </dd>
+
+        <dt>
+            Trạng thái
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trangthai)
+        </dd>
+
+        <dt>
+           Địa chỉ khách hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiachiKH)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a class="btn btn-success" href=@Url.Action("Index","Home")>Trang chủ</a>
+</p>
